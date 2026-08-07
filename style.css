@@ -13,7 +13,7 @@
 body, html {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden; /* Prevents any scrolling, locking the page strictly to viewport size */
     background-color: #000;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-primary);
@@ -44,7 +44,7 @@ body, html {
     align-items: center;
     text-align: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100%; /* Changed from min-height: 100vh to ensure it perfectly respects the non-scrollable body */
     padding: 9vh 20px 1vh 20px; /* Increased top padding to push top text down */
 }
 
