@@ -73,8 +73,8 @@ body, html {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100%; /* Changed from min-height: 100vh to ensure it perfectly respects the non-scrollable body */
-    padding: 9vh 20px 1vh 20px; /* Increased top padding to push top text down */
+    height: 100%; /* Changed from min-height: 100dvh to ensure it perfectly respects the non-scrollable body */
+    padding: 9dvh 20px 1dvh 20px; /* Increased top padding to push top text down */
 }
 
 /* Top Text */
@@ -95,14 +95,14 @@ body, html {
 /* Vertical Dividers */
 .vertical-divider {
     width: 1px;
-    height: 7vh; 
+    height: 7dvh; 
     background-color: rgba(212, 175, 55, 0.6); /* Golden line */
-    margin: 1vh auto; /* Slightly smaller margin */
+    margin: 1dvh auto; /* Slightly smaller margin */
 }
 
 /* Spacer for the central logo inside the image */
 .logo-spacer {
-    height: 35vh; /* Reduced to perfectly offset the increased top padding, keeping the motto text anchored */
+    height: 35dvh; /* Reduced to perfectly offset the increased top padding, keeping the motto text anchored */
     width: 100%;
 }
 
@@ -133,7 +133,7 @@ body, html {
 .tagline-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 1vh;
+    margin-bottom: 1dvh;
 }
 
 .tagline-btn {
@@ -181,7 +181,7 @@ body.loaded .fade-in {
 
 /* Reach Us Section */
 .reach-us-section {
-    margin-top: clamp(40px, 6vh, 60px);
+    margin-top: clamp(40px, 6dvh, 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,11 +269,11 @@ body.loaded .fade-in {
     }
     
     .container {
-        padding: 10vh 15px 2vh 15px; /* Slightly adjusted padding for mobile */
+        padding: 10dvh 15px 2dvh 15px; /* Slightly adjusted padding for mobile */
     }
 
     .logo-spacer {
-        height: 42vh; /* Pushes Motto and Coming Soon sections down on mobile */
+        height: 42dvh; /* Pushes Motto and Coming Soon sections down on mobile */
     }
 
     .motto-text {
@@ -286,7 +286,7 @@ body.loaded .fade-in {
     }
 
     .reach-us-section {
-        margin-top: 3vh;
+        margin-top: 3dvh;
     }
 
     .reach-us-heading {
