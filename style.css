@@ -273,7 +273,7 @@ body.loaded .fade-in {
     }
 
     .logo-spacer {
-        height: 54dvh; /* Pushes Motto and Coming Soon sections down on mobile */
+        height: 62dvh; /* Pushes Motto and Coming Soon sections down on mobile */
     }
 
     .motto-text {
