@@ -273,7 +273,7 @@ body.loaded .fade-in {
     }
 
     .logo-spacer {
-        height: 48dvh; /* Pushes Motto and Coming Soon sections down on mobile */
+        height: 54dvh; /* Pushes Motto and Coming Soon sections down on mobile */
     }
 
     .motto-text {
@@ -287,6 +287,8 @@ body.loaded .fade-in {
 
     .reach-us-section {
         margin-top: 3dvh;
+        transform: scale(0.85);
+        transform-origin: top center;
     }
 
     .reach-us-heading {
