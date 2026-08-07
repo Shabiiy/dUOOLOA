@@ -272,6 +272,10 @@ body.loaded .fade-in {
         padding: 10vh 15px 2vh 15px; /* Slightly adjusted padding for mobile */
     }
 
+    .logo-spacer {
+        height: 42vh; /* Pushes Motto and Coming Soon sections down on mobile */
+    }
+
     .motto-text {
         padding: 0 10px;
         line-height: 1.4;
