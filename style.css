@@ -179,6 +179,89 @@ body.loaded .fade-in {
     }
 }
 
+/* Reach Us Section */
+.reach-us-section {
+    margin-top: clamp(40px, 6vh, 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.reach-us-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: #C9A15A;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.reach-us-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.reach-us-divider {
+    width: 1px;
+    height: 35px;
+    background-color: rgba(201, 161, 90, 0.4);
+    margin: 0 28px;
+}
+
+.reach-us-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #C9A15A;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.reach-us-item span, .reach-us-text-link {
+    color: #C9A15A;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.reach-us-icons-group {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.reach-us-icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.reach-us-icon {
+    width: 17px;
+    height: 17px;
+    stroke: #C9A15A;
+    transition: all 0.3s ease;
+}
+
+/* Hover States */
+.reach-us-item:hover span, .reach-us-item:hover .reach-us-text-link, .reach-us-text-link:hover {
+    color: #dfb973;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(223, 185, 115, 0.5);
+}
+
+.reach-us-item:hover .reach-us-icon, .reach-us-icon-link:hover .reach-us-icon {
+    stroke: #dfb973;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .bg-image {
@@ -196,5 +279,24 @@ body.loaded .fade-in {
 
     .tagline-btn {
         padding: 14px 25px; /* Slightly smaller button padding for small screens */
+    }
+
+    .reach-us-section {
+        margin-top: 3vh;
+    }
+
+    .reach-us-heading {
+        margin-bottom: 8px;
+    }
+
+    .reach-us-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .reach-us-divider {
+        width: 35px;
+        height: 1px;
+        margin: 5px 0;
     }
 }
