@@ -35,6 +35,35 @@ body, html {
 }
 
 
+/* Preloader */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #0d0602; /* Very dark rich brown to match the aesthetic */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+}
+
+#loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#loader-percentage {
+    font-family: 'Poppins', sans-serif;
+    color: #D4AF37; /* Golden color */
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
 /* Main Container */
 .container {
     position: relative;
@@ -135,6 +164,10 @@ body, html {
 .fade-in {
     opacity: 0;
     transform: translateY(15px);
+}
+
+/* Wait for loading to finish before animating text in */
+body.loaded .fade-in {
     animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
     animation-delay: var(--delay, 0s);
 }
