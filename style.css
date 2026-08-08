@@ -230,6 +230,12 @@ body.loaded .fade-in {
     transition: all 0.3s ease;
 }
 
+.reach-us-item[href^="tel:"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
 .reach-us-icons-group {
     display: flex;
     gap: 6px;
